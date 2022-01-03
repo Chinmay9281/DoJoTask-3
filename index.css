@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #preloader{
-    background: #fff url("/images/preloader.gif") no-repeat center center;
+    background: #fff url("images/preloader.gif") no-repeat center center;
     height: 100vh;
     width: 100vw;
     background-size: 20%;
