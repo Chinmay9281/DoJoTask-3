@@ -1,0 +1,202 @@
+*{
+    margin: 15px 0;
+    font-family: Roboto , sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f4f4f4;
+    
+}
+header a{
+    float: left;
+}
+.head-text{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-left: 15px;
+    height: 25px;
+    margin-top: 30px;
+    padding: auto;
+    letter-spacing: -1px;
+}
+a{
+    text-decoration: none;;
+    color: gray;
+}
+.backbtn{
+    margin-left: 10px;
+}
+.bottom-section{
+    width: 400px;
+    border: 1px solid #f4f4f4;
+    /* text-align: center; */
+    padding: 50px;
+    top: 160px;
+    left: 10px;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 0.1);
+}
+.dynamic-address{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+}
+.change{
+    font-size: 13px;
+    color: #ffb719;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.heading{
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 0 10px;
+}
+.confirm{
+    text-align: center;
+    width: 100%;
+    height: 52px;
+    padding: 20px;
+    color: #fff;
+    background-color: #ffb719;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.back-arrow{
+    display: none;
+}
+@media (max-width:600px){
+    *{
+        margin: 0px;
+    }
+    header{
+        display: none;
+    }
+    .bottom-section{
+        position: fixed;
+        top: 65%;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        padding: 20px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+    .heading{
+        margin: 5px;
+        padding-left: 15px;
+    }
+    .dynamic-address{
+        height: 50px;
+        padding-top: 15px;
+        margin: 5px;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .change{
+        font-size: 16px;
+    }
+    .confirm{
+        margin: 5px;
+        width: 100%;
+        height: 50px;
+        padding-top: 15px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .back-arrow{
+        background-color: #fff;
+        position: fixed;
+        display: block;
+        top: 10px;
+        left: 90%;
+        font-size: 28px;
+        width: 40px;
+        border-radius: 20px;
+        padding: 3px;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    @media (max-width:400px){
+        .heading{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .address{
+            font-size: 16px;
+        }
+        .change{
+            font-size: 16px;
+        }
+        .confirm{
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        .back-arrow{
+            left: 85%;
+        }
+        .dynamic-address{
+            margin-top: 15px;
+        }
+        @media (max-width:322px){
+            .heading{
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .confirm{
+                font-size: 15px;
+                height: 40px;
+                padding-top: 10px;
+            }
+            .dynamic-address{
+                height: 40px;
+            }
+            .address{
+                font-size: 13px;
+            }
+            .change{
+                font-size: 13px;
+            }
+            .bottom-section{
+                padding: 20px 10px;
+            }
+            .back-arrow{
+                left: 85%;
+            }
+        }
+        @media (max-width:272px){
+            .confirm{
+                font-size: 13px;
+                height: 45px;
+                padding-top: 15px;
+            }
+            .heading{
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .address{
+                font-size: 12px;
+            }
+            .change{
+                font-size: 12px;
+            }
+            .dynamic-address{
+                height: 40px;
+            }
+            .back-arrow{
+                left: 80%;
+            }
+        }
+    }
+}

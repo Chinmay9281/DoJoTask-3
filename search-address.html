@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search-address.css">
+</head>
+
+<body>
+    <section>
+        <div class="backImage">
+            <img src="/images/map.png" class="side-image" alt="Background Map Image" style="width: 100vw;height: 100vh;">
+        </div>
+        <div class="sidebar">
+            <div class="head">
+                <div class="heading">
+                    <img src="/images/back-arrow.svg" alt="Back Arrow" class="back-arrow" onclick="redirectToIndex()">
+                    Deliver To
+                </div>
+                <img src="/images/close.svg" class="close-arrow" alt="Close Menu Icon" onclick="redirectToIndex()" style="cursor: pointer;">
+            </div>
+            <div class="input-box">
+                <input type="text" class="search" autocomplete="off" role="combobox" placeholder="Search Places">
+            </div>
+            <img src="/images/search.svg" alt="" class="search-icon">
+            <div href="/set-address.html" class="current-location" onclick="redirectToSetAddress()">
+                <img src="/images/current-location.png" class="location-image" alt="image" style="background: #ffb719;">
+                <span>
+                    Use current location
+                </span>
+            </div>
+        </div>
+    </section>
+    <script>
+        function redirectToSetAddress() {
+            location.href = "/set-address.html";
+        }
+        function redirectToIndex() {
+            location.href="/index.html";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's</title>
+    <!-- Styles sheet -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onload="myFunction()">
+    <div id="preloader"></div>
+    <header>
+        <img class="head-img" src="images/mcd1.jpg" alt="McDonald's Logo" width="56px" height="56px">
+        <p class="head-text">McDonald's</p>
+    </header>
+    <section class="content">
+        <div class="content-section">
+            <div class="content-navbar">
+                <div id="delivery" class="bottom_active" onclick="handleClickDelivery()">Delivery</div>
+                <div id="take-away" onclick="handleClickTakeaway()">Dine-in/Takeaway</div>
+            </div>
+            <h2 id="class-heading">Set delivery location</h2>
+            <div class="current-location" onclick="redirectToSetAddress()">
+                <img src="http://cdn.dotpe.in/cfe/image/current-location-white.svg" alt="image">
+                <span >
+                    Use current location
+                </span>
+            </div>
+            <div style="color: gray; font-size: 12px;" class="or">-- OR --</div>
+            <div class="search-location" onclick="redirectToSearchAddress()">
+                <i class="fas fa-search"></i>
+                Search for Street, locality...
+            </div>
+
+        </div>
+        <div class="content-image">
+            <img src="images/mcdonald.jpg" alt="McDonald Image">
+        </div>
+    </section>
+    <script>
+        var preloader = document.getElementById("preloader");
+        function myFunction() {
+            preloader.style.display="none";
+        }
+        function redirectToSetAddress() {
+            location.href="set-address.html";
+        }
+        function redirectToSearchAddress() {
+            location.href="search-address.html";
+        }
+        function handleClickDelivery(){
+            document.getElementById('class-heading').innerHTML="Set delivery location";
+            document.getElementById('delivery').classList.add('bottom_active');
+            document.getElementById('take-away').classList.remove('bottom_active');
+        }
+        function handleClickTakeaway() {
+            document.getElementById('class-heading').innerHTML="Provid your location to show outlets around you";
+            document.getElementById('delivery').classList.remove('bottom_active');
+            document.getElementById('take-away').classList.add('bottom_active');
+        }
+    </script>
+</body>
+
+</html>
