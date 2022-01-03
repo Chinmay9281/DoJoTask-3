@@ -12,22 +12,22 @@
 <body>
     <section>
         <div class="backImage">
-            <img src="/images/map.png" class="side-image" alt="Background Map Image" style="width: 100vw;height: 100vh;">
+            <img src="images/map.png" class="side-image" alt="Background Map Image" style="width: 100vw;height: 100vh;">
         </div>
         <div class="sidebar">
             <div class="head">
                 <div class="heading">
-                    <img src="/images/back-arrow.svg" alt="Back Arrow" class="back-arrow" onclick="redirectToIndex()">
+                    <img src="images/back-arrow.svg" alt="Back Arrow" class="back-arrow" onclick="redirectToIndex()">
                     Deliver To
                 </div>
-                <img src="/images/close.svg" class="close-arrow" alt="Close Menu Icon" onclick="redirectToIndex()" style="cursor: pointer;">
+                <img src="images/close.svg" class="close-arrow" alt="Close Menu Icon" onclick="redirectToIndex()" style="cursor: pointer;">
             </div>
             <div class="input-box">
                 <input type="text" class="search" autocomplete="off" role="combobox" placeholder="Search Places">
             </div>
-            <img src="/images/search.svg" alt="" class="search-icon">
-            <div href="/set-address.html" class="current-location" onclick="redirectToSetAddress()">
-                <img src="/images/current-location.png" class="location-image" alt="image" style="background: #ffb719;">
+            <img src="images/search.svg" alt="" class="search-icon">
+            <div class="current-location" onclick="redirectToSetAddress()">
+                <img src="images/current-location.png" class="location-image" alt="image" style="background: #ffb719;">
                 <span>
                     Use current location
                 </span>
@@ -36,10 +36,10 @@
     </section>
     <script>
         function redirectToSetAddress() {
-            location.href = "/set-address.html";
+            location.href = "set-address.html";
         }
         function redirectToIndex() {
-            location.href="/index.html";
+            location.href="index.html";
         }
 
     </script>
