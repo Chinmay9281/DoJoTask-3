@@ -36,7 +36,7 @@
                     <div class="change">CHANGE</div>
                 </div>
 
-                <div class="confirm">Confirm Location & Proceed</div>
+                <div class="confirm" onclick="redirectToOrder()">Confirm Location & Proceed</div>
             </div>
         </div>
     </section>
@@ -44,6 +44,9 @@
         
         function redirectToIndex() {
             location.href = "index.html";
+        }
+        function redirectToOrder() {
+            location.href = "order.html";
         }
     </script>
 </body>
