@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- style sheet -->
+    <link rel="stylesheet" href="order.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="scrollable">
+        <img src="images/mcd1.jpg" class="location-image" alt="McDonald's Logo">
+        <div class="location">
+            <h2>McDonalds</h2>
+            <div class="change-location">
+                <p>Delivery</p>
+                <div class="current-location" id="new-location" onclick="redirectToSetAddress()">
+                    <div class="location-info">
+                        <img src="images/location-icon.png" class="location-icon" alt="">
+                        <p class="location-name">India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store-location">
+            <h2 class="store-heading">Store Location</h2>
+            <p class="store-address">McDonalds Delhi Unitech Rohini</p>
+        </div>
+    </header>
+    <header class="fixed">
+        <div class="logo-position">
+            <img src="images/mcd1.jpg" class="location-image" alt="">
+            <p class="heading">McDonalds</p>
+        </div>
+        <div class="seach-food">
+            <input type="search" id="search" autocomplete="off" placeholder="search food">
+            <p class="type">Veg Only</p>
+            <!-- <input type="checkbox" id="switch"> 
+            <label for="switch">Toggle</label> -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <div class="location-responsive">
+        <img src="images/location-icon.png" alt="" class="location-icon">
+        <p class="location-para">Delivery to - India</p>
+    </div>
+    <div class="search-box">
+        <img src="images/mcd1.jpg" class="responsive-image" alt="McDonald's Logo">
+        <div class="address">
+            <p>McDonalds</p>
+            <p>McDonalds Delhi Unitech Rohini</p>
+        </div>
+        <div class="right-btn">
+            Delivery
+        </div>
+    </div>
+    <!-- <div class="fixedSearch">
+        <input type="search" id="searchFood" autocomplete="off" placeholder="search food">
+    </div> -->
+    <div class="responsive-menu" id="menu-bar" onclick="openMenuBar()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="responsive-search">
+        <input type="search" id="search-food" autocomplete="off" placeholder="search food">
+    </div>
+    <div class="offer">
+        <div class="free-text">
+            <span class="exciting-text">Exciting offers available</span>
+            <div>
+                <img src="images/offer1.png" alt="">
+                <img src="images/offer2.png" alt="">
+                <span class="more">+8</span>
+            </div>
+            
+        </div>
+        <div class="flat-text">40% off up to Rs.150.</div>
+        <div>VIEW OFFERS <span><img src="images/offer3.svg" alt=""></span></div>
+    </div>
+    <section class="content">
+        <aside class="menu" id="Menu">
+            <div class="menubar">
+                <h3>Menu</h3>
+                <i class="fas fa-times" id="close" onclick="closeMenuBar()"></i>
+            </div>
+            <a id="menu-element-scroll-2308" class="scroll" href="#happy-meals" class="active">Happy Meals</a>
+            <a id="menu-element-scroll-2310" class="scroll" href="#big-meals">Big Meals</a>
+            <a id="menu-element-scroll-2304" class="scroll" href="#extra-value-meals">Extra value Meals</a>
+            <a id="menu-element-scroll-2302" class="scroll" href="#sides">Sides</a>
+            <a id="menu-element-scroll-2303" class="scroll" href="#beverages">Beverages</a>
+            <a id="menu-element-scroll-2300" class="scroll" href="#desserts">Desserts</a>
+            <a id="menu-element-scroll-2305" class="scroll" href="#carte-products">A la carte Products</a>
+            <a id="menu-element-scroll-2301" class="scroll" href="#condiments">Condiments</a>
+            <a id="menu-element-scroll-149695" class="scroll" href="#value-meals">Value Meals</a>
+        </aside>
+        <aside class="food-items">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/image1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="foods">
+                <div id="happy-meals" class="borderClass" >
+                    <h3>Happy Meals</h3>
+                    <div class="food-card">
+                        <div class="card-text one">
+                            <p class="hm1 1">McVeggie Happy Meal</p>
+                            <span>₹</span><p class="hm1 1" style="display: inline;"> 267</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/happy-meal-image.png" alt="" width="100px" height="80px">
+                            <div class="addbtn" id="1">ADD</div>
+                            <!-- <button  onclick="addToCart()">ADD</button> -->
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">     
+                            <p>McAloo Tikki Happy Meal</p>
+                            <p>₹ 219</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/happy-meal-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chicken McNuggets 4Piece Happy Meal</p>
+                            <p>₹ 267</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/happy-meal-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McGrill Happy Meal</p>
+                            <p>₹ 262</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/happy-meal-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="big-meals" class="borderClass" >
+                    <h3>Big Meals</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McSpicy Paneer Wrap</p>
+                            <p>₹ 324</p>
+                            <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/big-meal-1.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Veg Maharaja Mac</p>
+                            <p>₹ 322</p>
+                            <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/big-meal-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Chicken Maharaja Mac</p>
+                            <p>₹ 333</p>
+                            <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/big-meal-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McSpicy Chicken Wrap</p>
+                            <p>₹ 334</p>
+                            <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/big-meal-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="extra-value-meals" class="borderClass" >
+                    <h3>Extra Value Meals</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McPuff</p>
+                            <p>₹ 162</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-1.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Chicken McGrill Double Patty Burger</p>
+                            <p>₹ 266</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Chicken McGrill</p>
+                            <p>₹ 214</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McChicken Double Patty Burger</p>
+                            <p>₹ 322</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Dosa Masala Double Patty Burger</p>
+                            <p>₹ 233</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-5.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McVeggie Double Patty Burger</p>
+                            <p>₹ 260</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-6.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McSpicy Paneer Double Patty Burge</p>
+                            <p>₹ 390</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-7.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Filet-O-Fish Double Patty Burger</p>
+                            <p>₹ 396</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-8.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McSpicy Chicken Double Patty Burger</p>
+                            <p>₹ 414</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-9.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McSpicy Paneer Burger</p>
+                            <p>₹ 287</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-10.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McVeggie</p>
+                            <p>₹ 220</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-11.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Grilled Butter Chicken</p>
+                            <p>₹ 256</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-12.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Grilled Butter Chicken Double Patty</p>
+                            <p>₹ 333</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-13.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Grilled Butter Paneer</p>
+                            <p>₹ 234</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-14.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Grilled Butter Paneer Double Patty</p>
+                            <p>₹ 311</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-15.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McAloo Tikki</p>
+                            <p>₹ 171</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-16.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Dosa Masala Burger</p>
+                            <p>₹ 190</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-17.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McSpicy Chicken Burger</p>
+                            <p>₹ 294</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-18.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McChicken</p>
+                            <p>₹ 246</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-19.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Chicken McNuggets 6pc</p>
+                            <p>₹ 267</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-20.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Chicken McNuggets 9pc</p>
+                            <p>₹ 302</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-21.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Filet O Fish</p>
+                            <p>₹ 278</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-22.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Schezwan Veg Burger</p>
+                            <p>₹ 190</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-23.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM Double Schezwan Veg Burger</p>
+                            <p>₹ 228</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-24.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>EVM McAloo Tikki Burger Double Patty</p>
+                            <p>₹ 194</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-25.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <!-- <div class="food-card">
+                        <div class="card-text">
+                            <p>McVeggie Happy Meal</p>
+                            <p>₹ 267</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/extra-value-26.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div id="sides" class="borderClass" >
+                    <h3>Sides</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Veg Pizza McPuff™</p>
+                            <p>₹ 37</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/sides-1.jpg" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Fries</p>
+                            <p>₹ 77</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/sides-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Pineapple Fruit Bowl</p>
+                            <p>₹ 47.5</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/sides-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chicken McNuggets</p>
+                            <p>₹ 142</p>
+                        </div>
+                        <div class="card-img">
+                            <!-- <img src="images/happy-meal-image.png" alt="" width="100px" height="80px"> -->
+                            <div class="addbtn" style="margin-top: 50px;">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="beverages" class="borderClass" >
+                    <h3>Beverages</h3>
+                    <p>Hot Beverages</p>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Black Coffee</p>
+                            <p>₹ 65</p>
+                        </div>
+                        <div class="card-img">
+                            <!-- <img src="images/happy-meal-image.png" alt="" width="100px" height="80px"> -->
+                            <div class="addbtn" style="margin-top: 50px;">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Coffee</p>
+                            <p>₹ 65</p>
+                        </div>
+                        <div class="card-img">
+                            <!-- <img src="images/happy-meal-image.png" alt="" width="100px" height="80px"> -->
+                            <div class="addbtn" style="margin-top: 50px;">ADD</div>
+                        </div>
+                    </div>
+                    <p>Cold Beverages</p>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Cold Coffee</p>
+                            <p>₹ 76</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-1.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chocolate Milk shake</p>
+                            <p>₹ 75</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>100% Apple Juice</p>
+                            <p>₹ 65</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Small Drink</p>
+                            <p>₹ 66</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Medium Drink</p>
+                            <p>₹ 77</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-5.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Large Drink</p>
+                            <p>₹ 88</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-6.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Schweppes Bottled Water</p>
+                            <p>₹ 48</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-7.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Med Ice Tea</p>
+                            <p>₹ 66</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-8.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Minute Maid Pulpy Orange</p>
+                            <p>₹ 67</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-9.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Coke Zero</p>
+                            <p>₹ 57</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/beverages-10.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="desserts" class="borderClass" >
+                    <h3>Desserts</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McFlurry Oreo Medium</p>
+                            <p>₹ 94</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/dessert-1.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McFlurry Choc Crunch Medium</p>
+                            <p>₹ 94</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/dessert-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Extra Topping</p>
+                            <p>₹ 20</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/dessert-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McFlurry Choc Crunch Small</p>
+                            <p>₹ 73</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/dessert-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McFlurry Oreo Small</p>
+                            <p>₹ 73</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/dessert-5.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carte-products" class="borderClass" >
+                    <h3>A la Carte Products</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chicken McGrill Double Patty Burger</p>
+                            <p>₹ 141</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-1.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Grilled Butter Paneer</p>
+                            <p>₹ 109</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Grilled Butter Chicken</p>
+                            <p>₹ 131</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Double Patty Grilled Butter Paneer</p>
+                            <p>₹ 186</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Double Patty Grilled Butter Chicken</p>
+                            <p>₹ 208</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-5.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chicken McGrill</p>
+                            <p>₹ 89</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-6.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Dosa Masala Double Patty Burger</p>
+                            <p>₹ 108</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-7.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McVeggie Double Patty Burger</p>
+                            <p>₹ 135</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-8.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McSpicy Paneer Double Patty Burger</p>
+                            <p>₹ 265</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-9.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Filet-O-Fish Double Patty Burger</p>
+                            <p>₹ 271</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-10.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McAloo Tikki™ Burger</p>
+                            <p>₹ 46</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-11.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McVeggie™ Burger</p>
+                            <p>₹ 95</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-12.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Veg Maharaja Mac Burger</p>
+                            <p>₹ 197</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-13.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McSpicy™ Paneer Burger</p>
+                            <p>₹ 162</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-13.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McSpicy™ Paneer Wrap</p>
+                            <p>₹ 199</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-15.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Dosa Masala Burger</p>
+                            <p>₹ 65</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-16.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Filet O Fish</p>
+                            <p>₹ 153</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-17.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McChicken™ Burger</p>
+                            <p>₹ 121</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-18.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Maharaja Mac Chicken</p>
+                            <p>₹ 208</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-19.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McSpicy™ Chicken Burger</p>
+                            <p>₹ 169</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-20.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Schezwan Veg Burger</p>
+                            <p>₹ 65</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-21.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Double Schezwan Veg Burger</p>
+                            <p>₹ 103</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-22.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McAloo Tikki Burger Double Pattyl</p>
+                            <p>₹ 69</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-23.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <!-- <div class="food-card">
+                        <div class="card-text">
+                            <p>McVeggie Happy Meal</p>
+                            <p>₹ 267</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/carte-24.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div id="condiments" class="borderClass" >
+                    <h3>Condiments</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Ketchup</p>
+                            <p>₹ 0.95</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/condiments-1.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Shake Shake(piri-piri)</p>
+                            <p>₹ 19</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/condiments-2.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chilli Sauce</p>
+                            <p>₹ 1.9</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/condiments-3.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Extra Cheese</p>
+                            <p>₹ 19</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/condiments-4.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Barbeque Dip</p>
+                            <p>₹ 19</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/condiments-5.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Mustard Dip</p>
+                            <p>₹ 19</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/condiments-6.png" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="value-meals" class="borderClass" >
+                    <h3>Value Meals</h3>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McAloo Tikki™ Value Meal</p>
+                            <p>₹ 109</p>
+                            <p>Save upto Rs.78 on meal of your favourite burger with fries [S] and choice of beverage
+                                [S].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/value-1.jpg" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>Chicken McGrill Value Meal</p>
+                            <p>₹ 164</p>
+                            <p>Save upto Rs.66 on meal of your favourite burger with fries [S] and choice of beverage
+                                [S].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/value-2.jpg" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McEgg™ Value Meal</p>
+                            <p>₹ 99</p>
+                            <p>Save upto Rs.95 on meal of your favourite burger with fries [S] and choice of beverage [S].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/value-3.jpg" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McVeggie™ Value Meal</p>
+                            <p>₹ 164</p>
+                            <p>Save upto Rs.71 on meal of your favourite burger with fries [S] and choice of beverage [S].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/value-4.jpg" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                    <div class="food-card">
+                        <div class="card-text">
+                            <p>McChicken™ Value Meal</p>
+                            <p>₹ 197</p>
+                            <p>Save upto Rs.65 on meal of your favourite burger with fries [S] and choice of beverage [S].</p>
+                        </div>
+                        <div class="card-img">
+                            <img src="images/value-5.jpg" alt="" width="100px" height="80px">
+                            <div class="addbtn">ADD</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+        <aside class="cart" id="CART">
+            <div>
+                <p class="cart-text" id="CART-TEXT">Your Cart Empty</p>
+                <img src="images/cart-image.png" class="cart-image" id="CART-IMAGE" alt="">
+            </div>
+        </aside>
+    </section>
+    <!-- <script src="order.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script>
+        function scrollToHappyMeals() {
+            location.href = "happy-meals"
+        }
+        function openMenuBar(){
+            document.getElementById("Menu").style.top='20%';
+        }
+        function closeMenuBar() {
+            document.getElementById("Menu").style.top="100%";
+        }
+        function redirectToSetAddress() {
+            location.href="set-address.html";
+        }
+        // function addToCart() {
+        //     console.log("Button Clicked")
+        //     var price = document.getElementById("price").innerHTML;
+        //     console.log(price);
+        // }
+        // if (document.getElementById("Menu").screen.width >= "900px") {
+        //     document.getElementById("Menu").style.display="block";
+        // }
+    </script>
+</body>
+
+</html>
