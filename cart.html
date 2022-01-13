@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <a href="order.html" class="backbtn">
+            < Back to Menu </a>
+                <div class="navbar">
+                    <img class="head-img" src="images/mcd1.jpg" alt="McDonald's Logo" width="56px" height="56px">
+                    <div>
+                        <p class="head-text">McDonald's</p>
+                        <img src="https://cdn.dotpe.in/cfe/image/ic-store.svg" alt="" class="logo-img">
+                        <p style="display: inline;" class="location-text">McDonalds Delhi Unitech Rohini</p>
+                    </div>
+                </div>
+    </header>
+    <section id="content">
+        <div class="delivery-details">
+            <div class="number-details">
+                <img src="https://cdn.dotpe.in/cfe/image/user-details.png" alt="" class="user-details">
+                <div class="contact-details">
+                    <!-- <span class="check-icon"><i class="fa fa-check-circle "></i></span> -->
+                    <p class="your-details">Your Details</p>
+                    <p class="number">1234567890</p>
+                    <p class="change-number">change <i class="fa fa-pen"></i></p>
+                </div>
+            </div>
+            <div class="address-details">
+                <img src="https://cdn.dotpe.in/cfe/image/delivery-location.png" alt="" class="location-icon">
+                <div class="address">
+                    <h2>Delivery Address</h2>
+                    <img src="https://cdn.dotpe.in/cfe/image/location-add.png" alt="" class="current-location-icon">
+                    <p class="change-address">Add a New Address</p>
+                    <p class="current-address">India</p>
+                    <button type="submit" class="btn" onclick="redirectToSetAddress()">+ Add New</button>
+                </div>
+            </div>
+            <div class="payment-details">
+                <img src="https://cdn.dotpe.in/cfe/image/wallet.svg" alt="" class="payment-icon">
+                <p class="payment-text">Payment</p>
+            </div>
+        </div>
+        <div class="cart-details">
+            <div class="cart">
+                <h2>CART</h2>
+                <div class="cart-items">
+                    <p>1 Item in Cart</p>
+                    <div class="item">
+                        <div class="item-name">
+                            <p>Fries</p>
+                            <p>small Fries</p>
+                        </div>
+                        <div class="button">
+                            <div class="decrement">-</div>
+                            <div class="count">1</div>
+                            <div class="increment">+</div>
+                        </div>
+                    </div>
+                    <p>₹ 77</p>
+                </div>
+            </div>
+            <div class="promo-code" onclick="openOfferMenu()">
+                <img src="https://cdn.dotpe.in/cfe/image/promo-success-icon.svg" alt="" class="promo-icon">
+                <p class="promo-text">APPLY PROMO CODE</p>
+            </div>
+
+            <div class="bill-section">
+                <p class="bill-head">Bill Details</p>
+                <div class="items">
+                    <p>Items Total</p>
+                    <p>₹ 77.00</p>
+                </div>
+                <div class="delivery-fee">
+                    <p>Delivery Fee</p>
+                    <p>₹ 35.00</p>
+                </div>
+                <div class="packaging-fee">
+                    <p>Packaging Fee</p>
+                    <p>₹ 0.00</p>
+                </div>
+                <div class="tax">
+                    <p>Tax & other changes</p>
+                    <p>₹ 5.62</p>
+                </div>
+                <div class="total">
+                    <p>To pay</p>
+                    <p>₹ 117.62</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offers" id="OFFERS">
+        <div class="heading">
+            <div class="heading-text">
+                <h2>Enter Promo Code</h2>
+                <p>to get discount</p>
+            </div>
+            <i class="fas fa-times-circle" onclick="closeOfferMenu()"></i>
+        </div>
+        <div class="input-field">
+            <input type="text" placeholder="Enter promo code here" class="input-text">
+            <button class="apply-btn">Apply</button>
+        </div>
+    </section>
+    <div class="responsive">
+        <div class="responsive-offers" id="RESPONSIVE-OFFERS">
+            <div class="heading">
+                <div class="heading-text">
+                    <h2>Enter Promo Code</h2>
+                    <p>to get discount</p>
+                </div>
+                <i class="fas fa-times-circle" onclick="closeResponsiveOfferMenu()"></i>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Enter promo code here" class="input-text">
+                <button class="apply-btn">Apply</button>
+            </div>
+        </div>
+        <div class="fixedNavbar">
+            <img src="images/back-arrow.svg" alt="" class="back-arrow" onclick="redirectToOrder()">
+            <p class="navbar-text">Your Order</p>
+        </div>
+        <div class="responsive-number">
+            <p class="number-text"><i class="fab fa-whatsapp"></i> 1234567890</p>
+            <i class="fa fa-pen"></i>
+        </div>
+        <div class="responsive-location">
+            <img src="https://cdn.dotpe.in/cfe/image/delivery-location.png" alt="" class="responsive-location-icon">
+            <p class="responsive-location-text">Delivery to India</p>
+        </div>
+        <div class="cart">
+            <div class="cart-items">
+                <p>1 Item in Cart</p>
+                <div class="item">
+                    <div class="item-name">
+                        <p>Fries</p>
+                        <p>small Fries</p>
+                    </div>
+                    <div class="button">
+                        <div class="decrement">-</div>
+                        <div class="count">1</div>
+                        <div class="increment">+</div>
+                    </div>
+                </div>
+                <p>₹ 77</p>
+            </div>
+        </div>
+        <div class="add-on">
+            <h3 style="background-color: white;">Popular Add One</h3>
+            <div class="food-card">
+                <div class="card-text">
+                    <p class="c1 81">Extra Cheese</p>
+                    <span>₹</span>
+                    <p style="display: inline;" class="c1 81"> 19</p>
+                </div>
+                <div class="card-img">
+                    <img src="images/condiments-4.png" alt="" width="100px" height="80px">
+                    <div class="addbtn" id="81">ADD</div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="card-text">
+                    <p class="c1 80">Chilli Sauce</p>
+                    <span>₹</span>
+                    <p style="display: inline;" class="c1 80"> 1.9</p>
+                </div>
+                <div class="card-img">
+                    <img src="images/condiments-3.png" alt="" width="100px" height="80px">
+                    <div class="addbtn" id="80"">ADD</div>
+                </div>
+            </div>
+            <div class="food-card">
+                <div class="card-text">
+                    <p class="c1 79">Shake Shake(piri-piri)</p>
+                    <span>₹</span>
+                    <p style="display: inline;" class="c1 79"> 19</p>
+                </div>
+                <div class="card-img">
+                    <img src="images/condiments-2.png" alt="" width="100px" height="80px">
+                    <div class="addbtn" id="79"">ADD</div>
+                </div>
+            </div>
+        </div>
+        <div class="vouchers">
+            <div class="offer1" onclick="openResponsiveOfferMenu()">
+                <div class="o1" >
+                    <img src="https://cdn.dotpe.in/cfe/image/promo-success-icon.svg" alt="" class="offer1-icon">
+                    <p class="offer1-text">Apply Store Offer</p>
+                </div>
+                <p class="more"> > </p>
+            </div>
+            <div class="offer1" onclick="openResponsiveOfferMenu()">
+                <div class="o1" >
+                    <img src="https://cdn.dotpe.in/cfe/image/promo-success-icon.svg" alt="" class="offer1-icon">
+                    <p class="offer1-text">Apply Bank/Wallet Offer</p>
+                </div>
+                <p class="more"> > </p>
+            </div>
+        </div>
+        <div class="responsive-bill-section">
+            <p class="bill-head">Bill Details</p>
+            <div class="items">
+                <p>Items Total</p>
+                <p>₹ 77.00</p>
+            </div>
+            <div class="delivery-fee">
+                <p>Delivery Fee</p>
+                <p>₹ 35.00</p>
+            </div>
+            <div class="packaging-fee">
+                <p>Packaging Fee</p>
+                <p>₹ 0.00</p>
+            </div>
+            <div class="tax">
+                <p>Tax & other changes</p>
+                <p>₹ 5.62</p>
+            </div>
+            <div class="total">
+                <p>To pay</p>
+                <p>₹ 117.62</p>
+            </div>
+        </div>
+        <div class="bottom-btn">
+            <button class="bottom-button">CONTINUE</button>
+        </div>
+    </div>
+    <script>
+        function redirectToOrder() {
+            location.href='order.html';
+        }
+        function redirectToSetAddress() {
+            location.href='set-address.html';
+        }
+        function openOfferMenu() {
+            document.getElementById('OFFERS').style.left = "75%";
+        }
+        function closeOfferMenu() {
+            document.getElementById("OFFERS").style.left='100%';
+        }
+        function openResponsiveOfferMenu() {
+            document.getElementById('RESPONSIVE-OFFERS').style.left='0%';
+        }
+        function closeResponsiveOfferMenu() {
+            document.getElementById('RESPONSIVE-OFFERS').style.left = '100%';
+        }
+    </script>
+</body>
+
+</html>
