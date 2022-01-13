@@ -126,9 +126,15 @@ header{
 }
 .content{
     display: flex;
+    /* position: absolute; */
     justify-content: space-between;
-    height: 100%;
+    /* height: 100%; */
     /* z-index: -1; */
+}
+.foods{
+    /* width: 33%; */
+    /* position: absolute; */
+    z-index: -1;
 }
 .menu{
     position: fixed;
@@ -159,9 +165,26 @@ header{
     /* margin-right: 40px; */
     border-radius: 10px;
 }
+.cart a{
+    padding: 5px;
+    text-decoration: none;
+    color: #ffb719;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ffb719;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 0.1);
+    display: none;
+}
+.cart-display{
+    display: block;
+}
+.cart a:hover{
+    color: #ffb719;
+}
 .cart div{
     border: 2px solid #f4f4f4;
-    width: 330px;
+    width: 420px;
+    height: auto;
 }
 .cart-text{
     text-align: center;
@@ -172,6 +195,7 @@ header{
     /* margin-left: 60px; */
 }
 .cart-image{
+    margin-top: 10px;
     height: 280px;
     width: 290px;
 }
@@ -344,6 +368,22 @@ input:checked + .slider:before {
     display: none;
 }
 
+#VIEW-CART{
+    width: 80%;
+    margin: 10px;
+    background: white;
+    color: #ffb719;
+    border: none;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+.view-cart{
+    display: none;
+}
+
+
+
 @media (max-width:900px){
     .location-image{
         display: none;
@@ -379,7 +419,7 @@ input:checked + .slider:before {
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 0;
+        /* bottom: 0; */
         top: 100%;
         width: 100vw;
         justify-content: center;
@@ -471,7 +511,7 @@ input:checked + .slider:before {
     .responsive-menu{
         display: block;
         position: fixed;
-        bottom: 8%;
+        bottom: 10%;
         right: 5%;
         background-color: #ffb719;
         padding: 7px;
@@ -534,6 +574,7 @@ input:checked + .slider:before {
         text-align: center;
         padding: 20px;
         border: 1px solid #f4f4f4;
+        margin-bottom: 30px;
         box-shadow: 0 3px 4px rgb(0 0 0 / 0.1);
     }
     .Footer{
@@ -573,6 +614,23 @@ input:checked + .slider:before {
     }
     .copyright-text{
         text-align: right;
+    }
+    .view-cart{
+        display: block;
+        position: fixed;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        height: 50px;
+        background: #ffb719;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 3px 4px rgb(0 0 0 / 0.1);
+    }
+    .view-cart a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
     }
     @media (max-width:500px){
         body{
