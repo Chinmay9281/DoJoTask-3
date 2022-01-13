@@ -131,44 +131,44 @@
                 <div id="happy-meals" class="borderClass" >
                     <h3>Happy Meals</h3>
                     <div class="food-card">
-                        <div class="card-text one">
+                        <div class="card-text">
                             <p class="hm1 1">McVeggie Happy Meal</p>
                             <span>₹</span><p class="hm1 1" style="display: inline;"> 267</p>
                         </div>
                         <div class="card-img">
                             <img src="images/happy-meal-image.png" alt="" width="100px" height="80px">
-                            <div class="addbtn" id="1">ADD</div>
+                            <div class="addbtn" id="1" onclick="addToCart(this)">ADD</div>
                             <!-- <button  onclick="addToCart()">ADD</button> -->
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">     
-                            <p>McAloo Tikki Happy Meal</p>
-                            <p>₹ 219</p>
+                            <p  class="hm1 2">McAloo Tikki Happy Meal</p>
+                            <span>₹</span><p style="display: inline;" class="hm1 2" > 219</p>
                         </div>
                         <div class="card-img">
                             <img src="images/happy-meal-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="2" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chicken McNuggets 4Piece Happy Meal</p>
-                            <p>₹ 267</p>
+                            <p class="hm1 3" >Chicken McNuggets 4Piece Happy Meal</p>
+                            <span>₹</span><p style="display: inline;" class="hm1 3" > 267</p>
                         </div>
                         <div class="card-img">
                             <img src="images/happy-meal-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="3" onclick="addToCart(this)" >ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McGrill Happy Meal</p>
-                            <p>₹ 262</p>
+                            <p class="hm1 4" >McGrill Happy Meal</p>
+                            <span>₹</span><p style="display: inline;" class="hm1 4" > 262</p>
                         </div>
                         <div class="card-img">
                             <img src="images/happy-meal-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="4" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -177,46 +177,46 @@
                     <h3>Big Meals</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McSpicy Paneer Wrap</p>
-                            <p>₹ 324</p>
+                            <p class="bm1 5">EVM McSpicy Paneer Wrap</p>
+                            <span>₹</span><p style="display: inline;" class="bm1 5"> 324</p>
                             <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/big-meal-1.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="5" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Veg Maharaja Mac</p>
-                            <p>₹ 322</p>
+                            <p class="bm1 6">EVM Veg Maharaja Mac</p>
+                            <span>₹</span><p style="display: inline;" class="bm1 6"> 322</p>
                             <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/big-meal-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="6" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Chicken Maharaja Mac</p>
-                            <p>₹ 333</p>
+                            <p class="bm1 7">EVM Chicken Maharaja Mac</p>
+                            <span>₹</span><p style="display: inline;" class="bm1 7"> 333</p>
                             <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/big-meal-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="7" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McSpicy Chicken Wrap</p>
-                            <p>₹ 334</p>
+                            <p class="bm1 8">EVM McSpicy Chicken Wrap</p>
+                            <span>₹</span><p style="display: inline;" class="bm1 8"> 334</p>
                             <p>Save upto Rs.43 on meal of your favourite burger with fries [M] and choice of beverage [M].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/big-meal-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="8" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -225,306 +225,296 @@
                     <h3>Extra Value Meals</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McPuff</p>
-                            <p>₹ 162</p>
+                            <p class="evm1 9">EVM McPuff</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 9"> 162</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-1.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="9" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Chicken McGrill Double Patty Burger</p>
-                            <p>₹ 266</p>
+                            <p class="evm1 10">EVM Chicken McGrill Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 10"> 266</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="10" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Chicken McGrill</p>
-                            <p>₹ 214</p>
+                            <p class="evm1 11">EVM Chicken McGrill</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 11"> 214</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="11" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McChicken Double Patty Burger</p>
-                            <p>₹ 322</p>
+                            <p class="evm1 12">EVM McChicken Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 12"> 322</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="12" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Dosa Masala Double Patty Burger</p>
-                            <p>₹ 233</p>
+                            <p class="evm1 13">EVM Dosa Masala Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 13"> 233</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-5.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="13" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McVeggie Double Patty Burger</p>
-                            <p>₹ 260</p>
+                            <p class="evm1 14">EVM McVeggie Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 14"> 260</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-6.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="14" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McSpicy Paneer Double Patty Burge</p>
-                            <p>₹ 390</p>
+                            <p class="evm1 15">EVM McSpicy Paneer Double Patty Burge</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 15"> 390</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-7.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="15" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Filet-O-Fish Double Patty Burger</p>
-                            <p>₹ 396</p>
+                            <p class="evm1 16">EVM Filet-O-Fish Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 16"> 396</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-8.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="16" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McSpicy Chicken Double Patty Burger</p>
-                            <p>₹ 414</p>
+                            <p class="evm1 17">EVM McSpicy Chicken Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 17"> 414</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-9.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="17" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McSpicy Paneer Burger</p>
-                            <p>₹ 287</p>
+                            <p class="evm1 18">EVM McSpicy Paneer Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 18"> 287</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-10.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="18" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McVeggie</p>
-                            <p>₹ 220</p>
+                            <p class="evm1 19">EVM McVeggie</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 19"> 220</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-11.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="19" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Grilled Butter Chicken</p>
-                            <p>₹ 256</p>
+                            <p class="evm1 20">EVM Grilled Butter Chicken</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 20"> 256</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-12.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="20" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Grilled Butter Chicken Double Patty</p>
-                            <p>₹ 333</p>
+                            <p class="evm1 21">EVM Grilled Butter Chicken Double Patty</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 21"> 333</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-13.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="21" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Grilled Butter Paneer</p>
-                            <p>₹ 234</p>
+                            <p class="evm1 22">EVM Grilled Butter Paneer</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 22"> 234</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-14.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="22" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Grilled Butter Paneer Double Patty</p>
-                            <p>₹ 311</p>
+                            <p class="evm1 23">EVM Grilled Butter Paneer Double Patty</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 23"> 311</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-15.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="23" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McAloo Tikki</p>
-                            <p>₹ 171</p>
+                            <p class="evm1 24">EVM McAloo Tikki</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 24"> 171</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-16.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="24" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Dosa Masala Burger</p>
-                            <p>₹ 190</p>
+                            <p class="evm1 25">EVM Dosa Masala Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 25"> 190</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-17.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="25" onclick="addToCart(this)" >ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McSpicy Chicken Burger</p>
-                            <p>₹ 294</p>
+                            <p class="evm1 26">EVM McSpicy Chicken Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 26"> 294</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-18.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="26" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McChicken</p>
-                            <p>₹ 246</p>
+                            <p class="evm1 27">EVM McChicken</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 27"> 246</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-19.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="27" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Chicken McNuggets 6pc</p>
-                            <p>₹ 267</p>
+                            <p class="evm1 28">EVM Chicken McNuggets 6pc</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 28"> 267</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-20.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="28" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Chicken McNuggets 9pc</p>
-                            <p>₹ 302</p>
+                            <p class="evm1 29">EVM Chicken McNuggets 9pc</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 29"> 302</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-21.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="29" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Filet O Fish</p>
-                            <p>₹ 278</p>
+                            <p class="evm1 30">EVM Filet O Fish</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 30"> 278</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-22.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="30" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Schezwan Veg Burger</p>
-                            <p>₹ 190</p>
+                            <p class="evm1 31">EVM Schezwan Veg Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 31"> 190</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-23.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="31" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM Double Schezwan Veg Burger</p>
-                            <p>₹ 228</p>
+                            <p class="evm1 32">EVM Double Schezwan Veg Burger</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 32"> 228</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-24.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="32" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>EVM McAloo Tikki Burger Double Patty</p>
-                            <p>₹ 194</p>
+                            <p class="evm1 33">EVM McAloo Tikki Burger Double Patty</p>
+                            <span>₹</span><p style="display: inline;" class="evm1 33"> 194</p>
                         </div>
                         <div class="card-img">
                             <img src="images/extra-value-25.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="33" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
-                    <!-- <div class="food-card">
-                        <div class="card-text">
-                            <p>McVeggie Happy Meal</p>
-                            <p>₹ 267</p>
-                        </div>
-                        <div class="card-img">
-                            <img src="images/extra-value-26.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div id="sides" class="borderClass" >
                     <h3>Sides</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Veg Pizza McPuff™</p>
-                            <p>₹ 37</p>
+                            <p class="s1 34">Veg Pizza McPuff™</p>
+                            <span>₹</span><p style="display: inline;" class="s1 34"> 37</p>
                         </div>
                         <div class="card-img">
                             <img src="images/sides-1.jpg" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="34" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Fries</p>
-                            <p>₹ 77</p>
+                            <p class="s1 35">Fries</p>
+                            <span>₹</span><p style="display: inline;" class="s1 35"> 77</p>
                         </div>
                         <div class="card-img">
                             <img src="images/sides-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="35" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Pineapple Fruit Bowl</p>
-                            <p>₹ 47.5</p>
+                            <p class="s1 36">Pineapple Fruit Bowl</p>
+                            <span>₹</span><p style="display: inline;" class="s1 36"> 47.5</p>
                         </div>
                         <div class="card-img">
                             <img src="images/sides-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="36" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chicken McNuggets</p>
-                            <p>₹ 142</p>
+                            <p class="s1 37">Chicken McNuggets</p>
+                            <span>₹</span><p style="display: inline;" class="s1 37"> 142</p>
                         </div>
                         <div class="card-img">
                             <!-- <img src="images/happy-meal-image.png" alt="" width="100px" height="80px"> -->
-                            <div class="addbtn" style="margin-top: 50px;">ADD</div>
+                            <div class="addbtn" style="margin-top: 50px;" id="37" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -534,123 +524,123 @@
                     <p>Hot Beverages</p>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Black Coffee</p>
-                            <p>₹ 65</p>
+                            <p class="b1 38">Black Coffee</p>
+                            <span>₹</span><p style="display: inline;" class="b1 38"> 65</p>
                         </div>
                         <div class="card-img">
                             <!-- <img src="images/happy-meal-image.png" alt="" width="100px" height="80px"> -->
-                            <div class="addbtn" style="margin-top: 50px;">ADD</div>
+                            <div class="addbtn" style="margin-top: 50px;" id="38" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Coffee</p>
-                            <p>₹ 65</p>
+                            <p class="b1 39">Coffee</p>
+                            <span>₹</span><p style="display: inline;" class="b1 39"> 65</p>
                         </div>
                         <div class="card-img">
                             <!-- <img src="images/happy-meal-image.png" alt="" width="100px" height="80px"> -->
-                            <div class="addbtn" style="margin-top: 50px;">ADD</div>
+                            <div class="addbtn" style="margin-top: 50px;" id="39" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <p>Cold Beverages</p>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Cold Coffee</p>
-                            <p>₹ 76</p>
+                            <p class="b1 40">Cold Coffee</p>
+                            <span>₹</span><p style="display: inline;" class="b1 40"> 76</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-1.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="40" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chocolate Milk shake</p>
-                            <p>₹ 75</p>
+                            <p class="b1 41">Chocolate Milk shake</p>
+                            <span>₹</span><p style="display: inline;" class="b1 41"> 75</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="41" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>100% Apple Juice</p>
-                            <p>₹ 65</p>
+                            <p class="b1 42">100% Apple Juice</p>
+                            <span>₹</span><p style="display: inline;" class="b1 42"> 65</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="42" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Small Drink</p>
-                            <p>₹ 66</p>
+                            <p class="b1 43">Small Drink</p>
+                            <span>₹</span><p style="display: inline;" class="b1 43"> 66</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="43" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Medium Drink</p>
-                            <p>₹ 77</p>
+                            <p class="b1 44">Medium Drink</p>
+                            <span>₹</span><p style="display: inline;" class="b1 44"> 77</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-5.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="44" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Large Drink</p>
-                            <p>₹ 88</p>
+                            <p class="b1 45">Large Drink</p>
+                            <span>₹</span><p style="display: inline;" class="b1 45"> 88</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-6.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="45" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Schweppes Bottled Water</p>
-                            <p>₹ 48</p>
+                            <p class="b1 46">Schweppes Bottled Water</p>
+                            <span>₹</span><p style="display: inline;" class="b1 46"> 48</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-7.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="46" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Med Ice Tea</p>
-                            <p>₹ 66</p>
+                            <p class="b1 47">Med Ice Tea</p>
+                            <span>₹</span><p style="display: inline;" class="b1 47"> 66</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-8.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="47" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Minute Maid Pulpy Orange</p>
-                            <p>₹ 67</p>
+                            <p class="b1 48">Minute Maid Pulpy Orange</p>
+                            <span>₹</span><p style="display: inline;" class="b1 48"> 67</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-9.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="48" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Coke Zero</p>
-                            <p>₹ 57</p>
+                            <p class="b1 49">Coke Zero</p>
+                            <span>₹</span><p style="display: inline;" class="b1 49"> 57</p>
                         </div>
                         <div class="card-img">
                             <img src="images/beverages-10.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="49" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -659,52 +649,52 @@
                     <h3>Desserts</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McFlurry Oreo Medium</p>
-                            <p>₹ 94</p>
+                            <p class="d1 50">McFlurry Oreo Medium</p>
+                            <span>₹</span><p style="display: inline;" class="d1 50"> 94</p>
                         </div>
                         <div class="card-img">
                             <img src="images/dessert-1.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="50" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McFlurry Choc Crunch Medium</p>
-                            <p>₹ 94</p>
+                            <p class="d1 51">McFlurry Choc Crunch Medium</p>
+                            <span>₹</span><p style="display: inline;" class="d1 51"> 94</p>
                         </div>
                         <div class="card-img">
                             <img src="images/dessert-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="51" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Extra Topping</p>
-                            <p>₹ 20</p>
+                            <p class="d1 52">Extra Topping</p>
+                            <span>₹</span><p style="display: inline;" class="d1 52"> 20</p>
                         </div>
                         <div class="card-img">
                             <img src="images/dessert-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="52" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McFlurry Choc Crunch Small</p>
-                            <p>₹ 73</p>
+                            <p class="d1 53">McFlurry Choc Crunch Small</p>
+                            <span>₹</span><p style="display: inline;" class="d1 53"> 73</p>
                         </div>
                         <div class="card-img">
                             <img src="images/dessert-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="53" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McFlurry Oreo Small</p>
-                            <p>₹ 73</p>
+                            <p class="d1 54">McFlurry Oreo Small</p>
+                            <span>₹</span><p style="display: inline;" class="d1 54"> 73</p>
                         </div>
                         <div class="card-img">
                             <img src="images/dessert-5.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="54" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -713,306 +703,296 @@
                     <h3>A la Carte Products</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chicken McGrill Double Patty Burger</p>
-                            <p>₹ 141</p>
+                            <p class="c1 55">Chicken McGrill Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 55"> 141</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-1.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="55" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Grilled Butter Paneer</p>
-                            <p>₹ 109</p>
+                            <p class="c1 56">Grilled Butter Paneer</p>
+                            <span>₹</span><p style="display: inline;" class="c1 56"> 109</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="56" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Grilled Butter Chicken</p>
-                            <p>₹ 131</p>
+                            <p class="c1 57">Grilled Butter Chicken</p>
+                            <span>₹</span><p style="display: inline;" class="c1 57"> 131</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="57" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Double Patty Grilled Butter Paneer</p>
-                            <p>₹ 186</p>
+                            <p class="c1 58">Double Patty Grilled Butter Paneer</p>
+                            <span>₹</span><p style="display: inline;" class="c1 58"> 186</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="58" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Double Patty Grilled Butter Chicken</p>
-                            <p>₹ 208</p>
+                            <p class="c1 59">Double Patty Grilled Butter Chicken</p>
+                            <span>₹</span><p style="display: inline;" class="c1 59"> 208</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-5.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="59" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chicken McGrill</p>
-                            <p>₹ 89</p>
+                            <p class="c1 60">Chicken McGrill</p>
+                            <span>₹</span><p style="display: inline;" class="c1 60"> 89</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-6.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="60" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Dosa Masala Double Patty Burger</p>
-                            <p>₹ 108</p>
+                            <p class="c1 61">Dosa Masala Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 61"> 108</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-7.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="61" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McVeggie Double Patty Burger</p>
-                            <p>₹ 135</p>
+                            <p class="c1 62">McVeggie Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 62"> 135</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-8.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="62" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McSpicy Paneer Double Patty Burger</p>
-                            <p>₹ 265</p>
+                            <p class="c1 63">McSpicy Paneer Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 63"> 265</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-9.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="63" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Filet-O-Fish Double Patty Burger</p>
-                            <p>₹ 271</p>
+                            <p class="c1 64">Filet-O-Fish Double Patty Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 64"> 271</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-10.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="64" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McAloo Tikki™ Burger</p>
-                            <p>₹ 46</p>
+                            <p class="c1 65">McAloo Tikki™ Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 65"> 46</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-11.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="65" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McVeggie™ Burger</p>
-                            <p>₹ 95</p>
+                            <p class="c1 66">McVeggie™ Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 66"> 95</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-12.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="66" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Veg Maharaja Mac Burger</p>
-                            <p>₹ 197</p>
+                            <p class="c1 67">Veg Maharaja Mac Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 67"> 197</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-13.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="67" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McSpicy™ Paneer Burger</p>
-                            <p>₹ 162</p>
+                            <p class="c1 68">McSpicy™ Paneer Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 68"> 162</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-13.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="68" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McSpicy™ Paneer Wrap</p>
-                            <p>₹ 199</p>
+                            <p class="c1 69">McSpicy™ Paneer Wrap</p>
+                            <span>₹</span><p style="display: inline;" class="c1 69"> 199</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-15.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="69" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Dosa Masala Burger</p>
-                            <p>₹ 65</p>
+                            <p class="c1 70">Dosa Masala Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 70"> 65</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-16.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="70" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Filet O Fish</p>
-                            <p>₹ 153</p>
+                            <p class="c1 71">Filet O Fish</p>
+                            <span>₹</span><p style="display: inline;" class="c1 71"> 153</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-17.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="71" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McChicken™ Burger</p>
-                            <p>₹ 121</p>
+                            <p class="c1 72">McChicken™ Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 72"> 121</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-18.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="72" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Maharaja Mac Chicken</p>
-                            <p>₹ 208</p>
+                            <p class="c1 73">Maharaja Mac Chicken</p>
+                            <span>₹</span><p style="display: inline;" class="c1 73"> 208</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-19.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="73" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McSpicy™ Chicken Burger</p>
-                            <p>₹ 169</p>
+                            <p class="c1 74">McSpicy™ Chicken Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 74"> 169</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-20.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="74" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Schezwan Veg Burger</p>
-                            <p>₹ 65</p>
+                            <p class="c1 75">Schezwan Veg Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 75"> 65</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-21.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="75" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Double Schezwan Veg Burger</p>
-                            <p>₹ 103</p>
+                            <p class="c1 76">Double Schezwan Veg Burger</p>
+                            <span>₹</span><p style="display: inline;" class="c1 76"> 103</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-22.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="76" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McAloo Tikki Burger Double Pattyl</p>
-                            <p>₹ 69</p>
+                            <p class="c1 77">McAloo Tikki Burger Double Pattyl</p>
+                            <span>₹</span><p style="display: inline;" class="c1 77"> 69</p>
                         </div>
                         <div class="card-img">
                             <img src="images/carte-23.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="77" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
-                    <!-- <div class="food-card">
-                        <div class="card-text">
-                            <p>McVeggie Happy Meal</p>
-                            <p>₹ 267</p>
-                        </div>
-                        <div class="card-img">
-                            <img src="images/carte-24.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div id="condiments" class="borderClass" >
                     <h3>Condiments</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Ketchup</p>
-                            <p>₹ 0.95</p>
+                            <p class="c1 78">Ketchup</p>
+                            <span>₹</span><p style="display: inline;" class="c1 78"> 0.95</p>
                         </div>
                         <div class="card-img">
                             <img src="images/condiments-1.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="78" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Shake Shake(piri-piri)</p>
-                            <p>₹ 19</p>
+                            <p class="c1 79">Shake Shake(piri-piri)</p>
+                            <span>₹</span><p style="display: inline;" class="c1 79"> 19</p>
                         </div>
                         <div class="card-img">
                             <img src="images/condiments-2.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="79" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chilli Sauce</p>
-                            <p>₹ 1.9</p>
+                            <p class="c1 80">Chilli Sauce</p>
+                            <span>₹</span><p style="display: inline;" class="c1 80"> 1.9</p>
                         </div>
                         <div class="card-img">
                             <img src="images/condiments-3.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="80" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Extra Cheese</p>
-                            <p>₹ 19</p>
+                            <p class="c1 81">Extra Cheese</p>
+                            <span>₹</span><p style="display: inline;" class="c1 81"> 19</p>
                         </div>
                         <div class="card-img">
                             <img src="images/condiments-4.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="81" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Barbeque Dip</p>
-                            <p>₹ 19</p>
+                            <p class="c1 82">Barbeque Dip</p>
+                            <span>₹</span><p style="display: inline;" class="c1 82">  19</p>
                         </div>
                         <div class="card-img">
                             <img src="images/condiments-5.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="82" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Mustard Dip</p>
-                            <p>₹ 19</p>
+                            <p class="c1 83">Mustard Dip</p>
+                            <span>₹</span><p style="display: inline;" class="c1 83"> 19</p>
                         </div>
                         <div class="card-img">
                             <img src="images/condiments-6.png" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="83" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -1021,59 +1001,59 @@
                     <h3>Value Meals</h3>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McAloo Tikki™ Value Meal</p>
-                            <p>₹ 109</p>
+                            <p class="vm1 84">McAloo Tikki™ Value Meal</p>
+                            <span>₹</span><p style="display: inline;" class="vm1 84"> 109</p>
                             <p>Save upto Rs.78 on meal of your favourite burger with fries [S] and choice of beverage
                                 [S].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/value-1.jpg" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="84" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>Chicken McGrill Value Meal</p>
-                            <p>₹ 164</p>
+                            <p class="vm1 85">Chicken McGrill Value Meal</p>
+                            <span>₹</span><p style="display: inline;" class="vm1 85"> 164</p>
                             <p>Save upto Rs.66 on meal of your favourite burger with fries [S] and choice of beverage
                                 [S].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/value-2.jpg" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="85" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McEgg™ Value Meal</p>
-                            <p>₹ 99</p>
+                            <p class="vm1 86">McEgg™ Value Meal</p>
+                            <span>₹</span><p style="display: inline;" class="vm1 86"> 99</p>
                             <p>Save upto Rs.95 on meal of your favourite burger with fries [S] and choice of beverage [S].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/value-3.jpg" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="86" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McVeggie™ Value Meal</p>
-                            <p>₹ 164</p>
+                            <p class="vm1 87">McVeggie™ Value Meal</p>
+                            <span>₹</span><p style="display: inline;" class="vm1 87"> 164</p>
                             <p>Save upto Rs.71 on meal of your favourite burger with fries [S] and choice of beverage [S].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/value-4.jpg" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="87" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                     <div class="food-card">
                         <div class="card-text">
-                            <p>McChicken™ Value Meal</p>
-                            <p>₹ 197</p>
+                            <p class="vm1 88">McChicken™ Value Meal</p>
+                            <span>₹</span><p style="display: inline;" class="vm1 88"> 197</p>
                             <p>Save upto Rs.65 on meal of your favourite burger with fries [S] and choice of beverage [S].</p>
                         </div>
                         <div class="card-img">
                             <img src="images/value-5.jpg" alt="" width="100px" height="80px">
-                            <div class="addbtn">ADD</div>
+                            <div class="addbtn" id="88" onclick="addToCart(this)">ADD</div>
                         </div>
                     </div>
                 </div>
@@ -1083,8 +1063,10 @@
         <aside class="cart" id="CART">
             <div>
                 <p class="cart-text" id="CART-TEXT">Your Cart Empty</p>
+                <a href="cart.html" class="view-cart" id="VIEW-CART">View Cart</a>
                 <img src="images/cart-image.png" class="cart-image" id="CART-IMAGE" alt="">
             </div>
+            <button id="VIEW-CART" onclick="redirectToCart()">View Cart</button>
         </aside>
     </section>
     <footer class="footer">
@@ -1103,10 +1085,13 @@
         </div>
         <div class="poweredby">
             <p>Powered by</p>
-            <img src="images/dotpe.png" alt="" class="dotpe">
+            <img src="https://cdn.dotpe.in/cfe/image/logo_tagline_icon.png" alt="" class="dotpe">
             <p class="copyright-text">&copy;2022 DotPe</p>
         </div>
     </footer>
+    <div class="view-cart">
+        <a href="cart.html" class="view">VIEW CART</a>
+    </div>
     <!-- <script src="order.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
@@ -1116,13 +1101,16 @@
             location.href = "happy-meals"
         }
         function openMenuBar(){
-            document.getElementById("Menu").style.top='20%';
+            document.getElementById("Menu").style.top='10%';
         }
         function closeMenuBar() {
-            document.getElementById("Menu").style.top="120%";
+            document.getElementById("Menu").style.top="100%";
         }
         function redirectToSetAddress() {
             location.href="set-address.html";
+        }
+        function redirectToCart() {
+            location.href='cart.html';
         }
     </script>
 </body>
